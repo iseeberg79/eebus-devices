@@ -1,0 +1,620 @@
+{
+  "$schema": "../../../schema/discovery-data.schema.json",
+  "specificationVersionList": [
+    {
+      "specificationVersion": "1.3.0"
+    }
+  ],
+  "deviceInformation": {
+    "description": {
+      "deviceAddress": {
+        "device": "d:_i:61908_12345WE20000R_Kostal-Inverter"
+      },
+      "deviceType": "Generic",
+      "networkFeatureSet": "smart",
+      "lastStateChange": "added"
+    }
+  },
+  "entityInformation": [
+    {
+      "description": {
+        "entityAddress": {
+          "entity": [0]
+        },
+        "entityType": "DeviceInformation"
+      }
+    },
+    {
+      "description": {
+        "entityAddress": {
+          "entity": [1]
+        },
+        "entityType": "CEM"
+      }
+    },
+    {
+      "description": {
+        "entityAddress": {
+          "entity": [2]
+        },
+        "entityType": "PVESHybrid"
+      }
+    },
+    {
+      "description": {
+        "entityAddress": {
+          "entity": [2, 1]
+        },
+        "entityType": "Inverter"
+      }
+    },
+    {
+      "description": {
+        "entityAddress": {
+          "entity": [2, 1, 1]
+        },
+        "entityType": "Battery"
+      }
+    }
+  ],
+  "featureInformation": [
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [0],
+          "feature": 0
+        },
+        "featureType": "NodeManagement",
+        "role": "special",
+        "supportedFunction": [
+          {
+            "function": "nodeManagementDetailedDiscoveryData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          },
+          {
+            "function": "nodeManagementUseCaseData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          },
+          {
+            "function": "nodeManagementSubscriptionData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          },
+          {
+            "function": "nodeManagementDestinationListData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          },
+          {
+            "function": "nodeManagementBindingData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          },
+          {
+            "function": "nodeManagementBindingRequestCall",
+            "possibleOperations": []
+          },
+          {
+            "function": "nodeManagementSubscriptionRequestCall",
+            "possibleOperations": []
+          },
+          {
+            "function": "nodeManagementSubscriptionDeleteCall",
+            "possibleOperations": []
+          },
+          {
+            "function": "nodeManagementBindingDeleteCall",
+            "possibleOperations": []
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [0],
+          "feature": 1
+        },
+        "featureType": "DeviceClassification",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceClassificationManufacturerData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 4
+        },
+        "featureType": "DeviceClassification",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceClassificationManufacturerData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 5
+        },
+        "featureType": "DeviceDiagnosis",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceDiagnosisStateData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 7
+        },
+        "featureType": "ElectricalConnection",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "electricalConnectionDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "electricalConnectionParameterDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "electricalConnectionCharacteristicListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 10
+        },
+        "featureType": "LoadControl",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "loadControlLimitDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "loadControlLimitListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              },
+              {
+                "write": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 11
+        },
+        "featureType": "Measurement",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "measurementDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "measurementListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "measurementConstraintsListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "measurementSeriesListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 18
+        },
+        "featureType": "Setpoint",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "setpointDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "setpointListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              },
+              {
+                "write": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "setpointConstraintsListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 24
+        },
+        "featureType": "DeviceConfiguration",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceConfigurationKeyValueDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "deviceConfigurationKeyValueListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              },
+              {
+                "write": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 31
+        },
+        "featureType": "StateInformation",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "stateInformationListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1],
+          "feature": 1000
+        },
+        "featureType": "DeviceDiagnosis",
+        "role": "server",
+        "description": "Device diagnosis server feature",
+        "supportedFunction": [
+          {
+            "function": "deviceDiagnosisHeartbeatData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          },
+          {
+            "function": "deviceDiagnosisStateData",
+            "possibleOperations": [
+              {
+                "read": {}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1, 1],
+          "feature": 4
+        },
+        "featureType": "DeviceClassification",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceClassificationManufacturerData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1, 1],
+          "feature": 5
+        },
+        "featureType": "DeviceDiagnosis",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceDiagnosisStateData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1, 1],
+          "feature": 7
+        },
+        "featureType": "ElectricalConnection",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "electricalConnectionDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "electricalConnectionParameterDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "electricalConnectionCharacteristicListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1, 1],
+          "feature": 11
+        },
+        "featureType": "Measurement",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "measurementDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "measurementListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "measurementConstraintsListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": {
+        "featureAddress": {
+          "entity": [2, 1, 1],
+          "feature": 24
+        },
+        "featureType": "DeviceConfiguration",
+        "role": "server",
+        "supportedFunction": [
+          {
+            "function": "deviceConfigurationKeyValueDescriptionListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          },
+          {
+            "function": "deviceConfigurationKeyValueListData",
+            "possibleOperations": [
+              {
+                "read": {
+                  "partial": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

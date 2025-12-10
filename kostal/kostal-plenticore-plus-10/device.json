@@ -1,0 +1,119 @@
+{
+  "$schema": "../../../schema/device.schema.json",
+  "ski": "f63439972d61c53fbc8159ad9e19e5ae6d452791",
+  "brand": "KOSTAL Solar Electric GmbH",
+  "model": "PLENTICORE-plus-10",
+  "type": "Inverter",
+  "description": "Hybrid solar inverter with integrated battery management system and advanced grid connection capabilities. Supports comprehensive power limitation and monitoring use cases essential for modern energy management systems.",
+  "specificationVersion": "1.3.0",
+  "networkFeatureSet": "smart",
+  "manufacturerId": "i:61908",
+  "unitId": "u:12345WE20000R",
+  "features": [
+    {
+      "featureType": "NodeManagement",
+      "featureId": 0,
+      "role": "special",
+      "description": "Device discovery and management"
+    },
+    {
+      "featureType": "DeviceClassification",
+      "featureId": 1,
+      "role": "server",
+      "description": "Device classification and identification"
+    },
+    {
+      "featureType": "DeviceDiagnosis",
+      "featureId": 5,
+      "role": "server",
+      "description": "Device health and status monitoring"
+    },
+    {
+      "featureType": "ElectricalConnection",
+      "featureId": 7,
+      "role": "server",
+      "description": "Electrical connection parameters and characteristics"
+    },
+    {
+      "featureType": "LoadControl",
+      "featureId": 10,
+      "role": "server",
+      "description": "Power limitation and load control capabilities"
+    },
+    {
+      "featureType": "Measurement",
+      "featureId": 11,
+      "role": "server",
+      "description": "Real-time electrical measurements and metrics"
+    },
+    {
+      "featureType": "Setpoint",
+      "featureId": 18,
+      "role": "server",
+      "description": "Operational parameter configuration and setpoints"
+    },
+    {
+      "featureType": "DeviceConfiguration",
+      "featureId": 24,
+      "role": "server",
+      "description": "Device configuration key-value pairs"
+    },
+    {
+      "featureType": "StateInformation",
+      "featureId": 31,
+      "role": "server",
+      "description": "Current operational state information"
+    },
+    {
+      "featureType": "DeviceDiagnosis",
+      "featureId": 1000,
+      "role": "server",
+      "description": "Advanced device diagnosis and heartbeat"
+    }
+  ],
+  "entities": [
+    {
+      "entityId": [0],
+      "entityType": "DeviceInformation",
+      "description": "Device-level information and configuration"
+    },
+    {
+      "entityId": [1],
+      "entityType": "CEM",
+      "description": "Controllable Electrical Module"
+    },
+    {
+      "entityId": [2],
+      "entityType": "PVESHybrid",
+      "description": "PV Energy System Hybrid (main inverter system)"
+    },
+    {
+      "entityId": [2, 1],
+      "entityType": "Inverter",
+      "description": "Main DC/AC inverter unit"
+    },
+    {
+      "entityId": [2, 1, 1],
+      "entityType": "Battery",
+      "description": "Integrated battery management system"
+    }
+  ],
+  "supportedUseCases": [
+    "limitationOfPowerProduction",
+    "limitationOfPowerConsumption",
+    "monitoringOfInverter",
+    "controlOfBattery",
+    "monitoringOfBattery",
+    "monitoringOfPowerConsumption"
+  ],
+  "testedEnvironment": {
+    "date": "2025-12-11",
+    "eebusVersion": "1.3.0",
+    "testingOrganization": "Enbility.net",
+    "firmwareVersion": "Unknown",
+    "notes": "Successfully established bi-directional EEBUS communication with full use case discovery"
+  },
+  "notes": "This device successfully demonstrates EEBUS protocol compliance with comprehensive feature support. All major use cases for hybrid inverter management are supported. Device undergoes retry logic during initial connection pairing, which is normal behavior.",
+  "discoveryDataPath": "discovery-data.json",
+  "usecaseDataPath": "usecase-data.json"
+}

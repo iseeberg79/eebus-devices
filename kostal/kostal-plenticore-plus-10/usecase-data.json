@@ -1,0 +1,99 @@
+{
+  "$schema": "../../../schema/usecase-data.schema.json",
+  "useCaseInformation": [
+    {
+      "address": {
+        "device": "d:_i:61908_12345WE20000R_Kostal-Inverter",
+        "entity": [2, 1]
+      },
+      "actor": "ControllableSystem",
+      "useCaseSupport": [
+        {
+          "useCaseName": "limitationOfPowerProduction",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4],
+          "useCaseDocumentSubRevision": "release"
+        },
+        {
+          "useCaseName": "limitationOfPowerConsumption",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4],
+          "useCaseDocumentSubRevision": "release"
+        }
+      ]
+    },
+    {
+      "address": {
+        "device": "d:_i:61908_12345WE20000R_Kostal-Inverter",
+        "entity": [2, 1]
+      },
+      "actor": "Inverter",
+      "useCaseSupport": [
+        {
+          "useCaseName": "monitoringOfInverter",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4, 5, 6, 7],
+          "useCaseDocumentSubRevision": "release"
+        },
+        {
+          "useCaseName": "controlOfBattery",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4, 5],
+          "useCaseDocumentSubRevision": "release"
+        }
+      ]
+    },
+    {
+      "address": {
+        "device": "d:_i:61908_12345WE20000R_Kostal-Inverter",
+        "entity": [2, 1]
+      },
+      "actor": "MonitoredUnit",
+      "useCaseSupport": [
+        {
+          "useCaseName": "monitoringOfPowerConsumption",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4, 5],
+          "useCaseDocumentSubRevision": "release"
+        }
+      ]
+    },
+    {
+      "address": {
+        "device": "d:_i:61908_12345WE20000R_Kostal-Inverter",
+        "entity": [2, 1, 1]
+      },
+      "actor": "Battery",
+      "useCaseSupport": [
+        {
+          "useCaseName": "monitoringOfBattery",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+          "useCaseDocumentSubRevision": "release"
+        }
+      ]
+    },
+    {
+      "address": {
+        "device": "d:_i:61908_12345WE20000R_Kostal-Inverter",
+        "entity": [1]
+      },
+      "actor": "MonitoringAppliance",
+      "useCaseSupport": [
+        {
+          "useCaseName": "monitoringOfGridConnectionPoint",
+          "useCaseVersion": "1.0.0",
+          "useCaseAvailable": true,
+          "scenarioSupport": [1, 2, 3, 4, 5, 6, 7],
+          "useCaseDocumentSubRevision": "release"
+        }
+      ]
+    }
+  ]
+}
